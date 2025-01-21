@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.font {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+.primary-button {
+  width: 197px;
+  padding: 10px;
+  background: orange;
+  border-radius: 12px;
+  border: none;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.secondary-button {
+  width: 197px;
+  padding: 10px;
+  background: black;
+  border-radius: 12px;
+  border: none;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+img {
+  width: 100%;
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/*  */
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+.menu-bar {
+  display: flex;
+  align-items: center;
+}
+
+.menu-bar li {
+  margin-right: 32px;
+}
+
+.menu-bar .one {
+  font-weight: 700;
+  color: orange;
+}
+.menu-bar .list {
+  font-weight: 500;
+}
+.menu-bar .two {
+  color: skyblue;
+}
+.menu-bar .three {
+  color: #05d4df;
+}
+.menu-bar .four {
+  color: #5d58ef;
+}
+
+.menu-bar .one,
+.two,
+.three,
+.four {
+  font-size: 1.25rem;
+}
+
+.menu-icon {
+  display: none;
+}
+
+/* banner */
+
+.banner-container {
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.banner-desc {
+  padding: 120px 0px;
+  margin: 0 50px 0 20px;
+}
+.banner-desc h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+.banner-desc p {
+  margin-bottom: 24px;
+}
+
+.banner-img {
+  width: 100%;
+}
+
+/* small device */
+@media screen and (max-width: 568px) {
+  .menu-bar {
+    display: none;
+  }
+
+  .banner {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner-desc {
+    text-align: center;
+    margin-right: 0;
+    padding: 0;
+  }
+  .log-btn {
+    display: none;
+  }
+  .menu-icon {
+    display: block;
+    width: 30px;
+    height: 30px;
+  }
+
+  .banner-img {
+    margin: 10px;
+  }
+}
