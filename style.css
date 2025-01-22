@@ -181,10 +181,10 @@ section h2 {
 .card .one .btn {
   color: #64c8ff;
 }
-.card .btn {
+.card .two .btn {
   color: #f0aa00;
 }
-.card .btn {
+.card .three .btn {
   color: #8700ff;
 }
 .card-box img {
@@ -217,6 +217,10 @@ section h2 {
 .arrow-icon i {
   font-size: 60px;
   color: orange;
+}
+
+.arrow-icon i:hover {
+  color: rgb(194, 154, 79);
 }
 
 /* story */
