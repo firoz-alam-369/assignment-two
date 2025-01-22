@@ -358,6 +358,9 @@ footer .main-container {
 }
 /* small device */
 @media screen and (max-width: 576px) {
+  header .logo h1 {
+    display: none;
+  }
   .menu-bar {
     display: none;
   }
