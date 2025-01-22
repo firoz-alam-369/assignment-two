@@ -309,6 +309,67 @@ section h2 {
 .stories-container .view-button {
   text-align: center;
 }
+
+/* Footer */
+
+footer {
+  background: #01acfd;
+}
+
+footer .main-container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.footer-item {
+  color: #ffffff;
+}
+.footer-item li a {
+  line-height: 2;
+  color: #ffffff;
+}
+.footer-item h4 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}
+
+.footer-icon-title h1 {
+  font-size: 2.6rem;
+}
+
+.footer-icon-title {
+  margin-bottom: 30px;
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 123px 0px 174px 0px;
+}
+
+.about-school {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer-icon-title {
+  display: flex;
+  align-items: center;
+}
+.footer-item {
+  width: 33%;
+}
+.footer-icon-title img {
+  width: 82px;
+  height: 82px;
+}
+
+.keep-touch img {
+  width: 40px;
+  height: 40px;
+}
 /* small device */
 @media screen and (max-width: 576px) {
   .menu-bar {
@@ -378,7 +439,20 @@ section h2 {
     top: 100px;
     left: 0px;
   }
-  .third-button {
+
+  .main-container {
+    align-items: self-start;
+    justify-content: start;
+    flex-direction: column;
+  }
+  .footer-item {
+    width: 100%;
+    text-align: center;
+  }
+
+  .about-school {
+    margin: 30px 0px;
+    line-height: 1;
   }
 }
 
