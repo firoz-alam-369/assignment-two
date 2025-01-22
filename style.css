@@ -289,11 +289,12 @@ section h2 {
   grid-row: span 2;
 }
 
-.item1 .story-btn {
+.story-card-box .story-btn {
   position: absolute;
-  top: 430px;
-  left: 50px;
+  top: 55%;
+  left: 10px;
 }
+
 .item1 .third-button {
   background: #3cd8e8;
 }
@@ -301,11 +302,6 @@ section h2 {
   background: #5d58f0;
 }
 
-.story-btn {
-  position: absolute;
-  top: 200px;
-  left: 50px;
-}
 .stories-container .view-button {
   text-align: center;
 }
@@ -430,14 +426,14 @@ footer .main-container {
     grid-template-rows: repeat(2, 1fr);
   }
 
-  .story-card .item1 {
-    display: none;
+  .story-card-box .story-btn {
+    position: absolute;
+    top: 33%;
+    left: 0px;
   }
 
-  .story-btn {
-    position: absolute;
-    top: 100px;
-    left: 0px;
+  .story-card .item1 {
+    display: none;
   }
 
   .main-container {
@@ -456,16 +452,10 @@ footer .main-container {
   }
 }
 
-@media screen and (min-width: 576px) and (max-width: 992px) {
-  .item1 .story-btn {
+@media screen and (max-width: 576px) and (min-width: 992px) {
+  .story-card-box .story-btn {
     position: absolute;
-    top: 220px;
-    left: 0px;
-  }
-
-  .story-btn {
-    position: absolute;
-    top: 100px;
+    top: 30%;
     left: 0px;
   }
 }
