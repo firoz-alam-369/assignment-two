@@ -306,7 +306,9 @@ section h2 {
   top: 200px;
   left: 50px;
 }
-
+.stories-container .view-button {
+  text-align: center;
+}
 /* small device */
 @media screen and (max-width: 576px) {
   .menu-bar {
@@ -359,5 +361,37 @@ section h2 {
 
   .arrow-icon {
     display: none;
+  }
+
+  .story-card {
+    margin: 0px 5px 0px 5px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .story-card .item1 {
+    display: none;
+  }
+
+  .story-btn {
+    position: absolute;
+    top: 100px;
+    left: 0px;
+  }
+  .third-button {
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .item1 .story-btn {
+    position: absolute;
+    top: 220px;
+    left: 0px;
+  }
+
+  .story-btn {
+    position: absolute;
+    top: 100px;
+    left: 0px;
   }
 }
