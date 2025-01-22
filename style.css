@@ -42,16 +42,30 @@ a {
   color: #ffffff;
 }
 
+.third-button {
+  width: 175px;
+  padding: 10px;
+  background: #95b226;
+  border: none;
+  font-size: 0.938rem;
+  font-weight: 500;
+  color: #ffffff;
+  border-radius: 16px;
+}
+
 img {
   width: 100%;
 }
 .container {
-  max-width: 1440px;
-  margin: 0 auto;
+  /* max-width: 1440px;
+  margin: 0 auto; */
 }
 
 /*  */
-
+header {
+  max-width: 1440px;
+  margin: 0 auto;
+}
 nav {
   display: flex;
   align-items: center;
@@ -102,9 +116,6 @@ nav {
 
 /* banner */
 
-.banner-container {
-}
-
 .banner {
   display: flex;
   align-items: center;
@@ -128,12 +139,15 @@ nav {
 .standard {
   background-image: url("./assets/bg.png");
   background-size: cover;
+  background-position: center;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 .statndard-container {
   padding: 60px 0px;
 }
 
-.statndard-container h2 {
+section h2 {
   font-size: 2.8rem;
   font-weight: 700;
   text-align: center;
@@ -207,6 +221,92 @@ nav {
   font-size: 60px;
   color: orange;
 }
+
+/* story */
+
+.story {
+  background-size: contain cover;
+  background-position: center;
+  /* background: linear-gradient(to top, #fec661, #ffffff, #ffffff); */
+  background: linear-gradient(
+    to top,
+
+    rgba(224, 167, 68, 0.6) 50%,
+    rgba(226, 171, 69, 0.4) 75%,
+    rgba(245, 241, 236, 0.2) 100%
+  );
+}
+
+.stories-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 60px 0px;
+  background-image: url("./assets/bg.png");
+  /* background: linear-gradient(to top, #fea301, #ffffff, #ffffff); */
+}
+.story-card {
+  padding: 80px 0px;
+}
+
+.story-img img {
+  width: 100%;
+}
+
+.story-card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.story-card-box {
+  display: grid;
+  gap: 5px;
+  border-radius: 16px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+  position: relative;
+  background: #ffffff;
+}
+.story-card-box img {
+  border-radius: 16px 16px 0px 0px;
+}
+.story-card-box h4 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding: 80px 50px 80px 50px;
+}
+
+.story-card-box p {
+  padding: 0px 50px 80px 50px;
+}
+
+.item-desc {
+  padding: 30px;
+}
+.item1 {
+  position: relative;
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.item1 .story-btn {
+  position: absolute;
+  top: 430px;
+  left: 50px;
+}
+.item1 .third-button {
+  background: #3cd8e8;
+}
+.item3 .third-button {
+  background: #5d58f0;
+}
+
+.story-btn {
+  position: absolute;
+  top: 200px;
+  left: 50px;
+}
+
 /* small device */
 @media screen and (max-width: 576px) {
   .menu-bar {
