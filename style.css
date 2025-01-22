@@ -123,12 +123,91 @@ nav {
   margin-bottom: 24px;
 }
 
-.banner-img {
-  width: 100%;
+/* statndard-container */
+
+.standard {
+  background-image: url("./assets/bg.png");
+  background-size: cover;
+}
+.statndard-container {
+  padding: 60px 0px;
 }
 
+.statndard-container h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.card {
+  display: flex;
+  padding: 80px 0px;
+}
+.card-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.card .one {
+  background: linear-gradient(to bottom, #def5ff, #ffffff, #ffffff);
+  border-radius: 19px;
+  margin-right: 28px;
+}
+.card .two {
+  background: linear-gradient(to bottom, #fff4dc, #ffffff, #ffffff);
+  border-radius: 19px;
+  margin-right: 28px;
+}
+.card .three {
+  background: linear-gradient(to bottom, #f2e8ff, #ffffff, #ffffff);
+  border-radius: 19px;
+}
+.card .one .btn {
+  color: #64c8ff;
+}
+.card .btn {
+  color: #f0aa00;
+}
+.card .btn {
+  color: #8700ff;
+}
+.card-box img {
+  width: 136px;
+  height: 136px;
+  margin-bottom: 30px;
+}
+
+.card-box h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.card-box p {
+  font-size: 0.938rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 30px;
+  line-height: 2;
+}
+.card-box p .btn {
+  font-weight: 700;
+}
+
+.arrow-icon {
+  text-align: center;
+}
+
+.arrow-icon i {
+  font-size: 60px;
+  color: orange;
+}
 /* small device */
-@media screen and (max-width: 568px) {
+@media screen and (max-width: 576px) {
   .menu-bar {
     display: none;
   }
